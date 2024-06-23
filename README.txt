@@ -1,7 +1,7 @@
 File ini menjelaskan kelengkapan berkas proyek akhir kami yang berjudul FlightTicket. Berkas terdiri dari:
 File database sql dari proyek ke Github
 Source code project NetBeans
-Video ke YouTube
+Video ke YouTube https://youtu.be/h2JeFMQqI00
 
 Kelompok Adiya :
 1. Rahma Fadillah, B, 1402023055
