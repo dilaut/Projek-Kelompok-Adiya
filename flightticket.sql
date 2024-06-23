@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jun 2024 pada 17.13
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.0.30
+-- Generation Time: Jun 13, 2024 at 12:53 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `akun`
+-- Table structure for table `akun`
 --
 
 CREATE TABLE `akun` (
@@ -34,25 +34,17 @@ CREATE TABLE `akun` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `akun`
+-- Dumping data for table `akun`
 --
 
 INSERT INTO `akun` (`nama`, `email`, `password`) VALUES
 ('Alya', 'alya@gmail.com', 'alya1234'),
-('dandi', 'dandi', 'dandi123'),
-('Dila', 'dila@gmail.com', 'dila1234'),
-('rey', 'gmail', '12345678'),
-('harum', 'harum@gmail.com', 'harum123'),
-('Hilya', 'hilya@gmail.com', 'hilya123'),
-('ica', 'ica@gmail.com', 'iiccaaaa'),
-('icastik', 'icastik@gmail.com', 'ica12345'),
-('lana', 'lana@gmail.com', 'lanaaaaa'),
-('lana', 'lanaa@gmail.com', 'lana123444445');
+('Hilya', 'hilya@gmail.com', 'hilya123');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pesanan`
+-- Table structure for table `pesanan`
 --
 
 CREATE TABLE `pesanan` (
@@ -68,24 +60,25 @@ CREATE TABLE `pesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `pesanan`
+-- Dumping data for table `pesanan`
 --
 
 INSERT INTO `pesanan` (`email`, `nama`, `maskapai`, `kode`, `keberangkatan`, `tujuan`, `tanggal`, `jam`, `harga`) VALUES
-('harum@gmail.com', 'harum', 'Garuda Indonesia', 'GA - 1158 Economy', 'Semarang (SRG)', 'Bali (DPS)', '28-06-2024', '11.20', 'Rp 2.985.000 / pax');
+('alya@gmail.com', 'Alya', 'Citilink', '0G - 660 Economy', 'Jakarta (JKTA)', 'Bali (DPS)', '14-06-2023', '07.40', 'Rp 1.335.000 / pax'),
+('alya@gmail.com', 'Alya', 'Lion Air', 'JT - 7628 Economy', 'Semarang (SRG)', 'Surabaya (SUB)', '15-06-2024', '14.45', 'Rp 2.155.000 / pax');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `akun`
+-- Indexes for table `akun`
 --
 ALTER TABLE `akun`
   ADD PRIMARY KEY (`email`);
 
 --
--- Indeks untuk tabel `pesanan`
+-- Indexes for table `pesanan`
 --
 ALTER TABLE `pesanan`
   ADD PRIMARY KEY (`kode`);
